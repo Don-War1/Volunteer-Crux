@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #4CAF50, #ff0000);
+    padding: 15px;
+    color: white;
+}
+
+.navbar-horizontal ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.navbar-horizontal ul li {
+    margin: 0 15px;
+}
+
+.navbar-horizontal ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.navbar-horizontal ul li a:hover {
+    color: #ffd700;
+}
+
+/* Centered Title for Home Page */
+body.theme-home .hero h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 20px;
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Dynamic Themes */
+body.theme-home {
+    background: linear-gradient(120deg, #ffffff, #4CAF50, #ff0000);
+}
+
+body.theme-about {
+    background: linear-gradient(120deg, #ffffff, #4CAF50, #ff0000);
+}
+
+body.theme-contact {
+    background: linear-gradient(120deg, #ffffff, #4CAF50, #ff0000);
+}
+
+body.theme-events {
+    background: linear-gradient(120deg, #ffffff, #4CAF50, #ff0000);
+}
+
+body.theme-login {
+    background: linear-gradient(120deg, #ffffff, #4CAF50, #ff0000);
+}
+
+body.theme-signup {
+    background: linear-gradient(120deg, #ffffff, #4CAF50, #ff0000);
+}
+
+body.theme-volunteer-dashboard {
+    background: linear-gradient(120deg, #ffa500, #4CAF50, #0000ff);
+    color: white;
+}
+
+body.theme-manager-dashboard {
+    background: linear-gradient(120deg, #000000, #ffffff);
+    color: white;
+}
+
+body.theme-logout {
+    background: linear-gradient(120deg, #e0e0e0, #f5f5f5);
+    color: #333;
+}
+
+/* Forms */
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}

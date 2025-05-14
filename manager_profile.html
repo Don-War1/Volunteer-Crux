@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="manager-view">
+    <div class="sidebar">
+        <h2>Manager Dashboard</h2>
+        <ul>
+            <li><a href="manager_dashboard.html">Dashboard</a></li>
+            <li><a href="create_event.html">Create Event</a></li>
+            <li><a href="manage_events.html">Manage Events</a></li>
+            <li><a href="generate_certificates.html">Generate Certificates</a></li>
+            <li><a href="manager_profile.html">Profile</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Manager Profile</h1>
+            <p>Update your account details below.</p>
+        </div>
+
+        <form action="update_manager_profile.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" value="Carol White" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="carolwhite@example.com" required>
+
+            <label for="current-password">Current Password:</label>
+            <input type="password" id="current-password" name="current_password" required>
+
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password" name="new_password">
+
+            <label for="confirm-password">Confirm New Password:</label>
+            <input type="password" id="confirm-password" name="confirm_password">
+
+            <button type="submit">Update Profile</button>
+        </form>
+    </div>
+</body>
+</html>

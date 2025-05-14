@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="guest-view">
+    <div class="header">
+        <h1>Sign Up</h1>
+        <p>Create an account to join Volunteer Crux.</p>
+    </div>
+
+    <form action="signup_action.php" method="POST" class="form-container">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+        <label for="skills">Your Skills:</label>
+        <input type="text" id="skills" name="skills" placeholder="E.g., Leadership, First Aid, Teamwork" required>
+
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <p>Already have an account? <a href="login.html">Log in here</a>.</p>
+</body>
+</html>
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Certificates</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="manager-view">
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <h2>Manager Dashboard</h2>
+        <ul>
+            <li><a href="manager_dashboard.html">Dashboard</a></li>
+            <li><a href="create_event.html">Create Event</a></li>
+            <li><a href="manage_events.html">Manage Events</a></li>
+            <li><a href="generate_certificates.html">Generate Certificates</a></li>
+            <li><a href="manager_profile.html">Profile</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Generate Certificates</h1>
+            <p>Select an event to generate certificates for participants.</p>
+        </div>
+
+        <form action="generate_certificates_action.php" method="POST">
+            <label for="event">Select Event:</label>
+            <select id="event" name="event" required>
+                <option value="">Choose an Event</option>
+                <option value="1">Clean the Beach</option>
+                <option value="2">Tree Plantation Drive</option>
+            </select>
+
+            <button type="submit">Generate Certificates</button>
+        </form>
+    </div>
+</body>
+</html>
